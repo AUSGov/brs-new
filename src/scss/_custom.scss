@@ -64,7 +64,31 @@ a {
 #accountWrapper {
   display: none;
 }
-
+.standardpage {
+  .pageheader {
+    margin-bottom: 3.5rem;
+  }
+  p, li {
+    font-size: 1.125rem;
+  }
+  a {
+    color: $bga-blue-tint1;
+    text-decoration: underline;
+    &:hover {
+      color: $bga-blue;
+      background-color: $bga-blue-tint3;
+    }
+  }
+  ul, li {
+    line-height: 1.8;
+    list-style-type: circle;
+  }
+}
+.brightidea {
+  margin-right: .5rem;
+  position: relative;
+  top: -5px;
+}
 
 // Responsive (medium and up)
 @media screen and (min-width: 768px) {
