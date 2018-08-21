@@ -104,15 +104,6 @@ const config = {
         removeComments: true,
       },
     }),
-    new HtmlWebPackPlugin({
-      template: 'tax-registrations.html',
-      filename: 'tax-registrations.html',
-      minify: !IS_DEV && {
-        collapseWhitespace: true,
-        preserveLineBreaks: true,
-        removeComments: true,
-      },
-    }),
     new ExtractTextPlugin('styles.css'),
   ],
 };
