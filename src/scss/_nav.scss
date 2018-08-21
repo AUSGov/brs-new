@@ -1,12 +1,20 @@
-// Nav
+// Nav and Navbar
 .navbar {
   background-color: $bga-blue;
   padding-left: 0;
   padding-right: 0;
-  min-height: 56px;
+  min-height: 66px;
 }
 .navbar-brand {
   font-size: 0.875rem;
+}
+.crest {
+  display: none;
+}
+.mobcrest {
+  display: block;
+  width: 140px;
+  overflow: visible;
 }
 .navbar-dark {
   .navbar-toggler {
@@ -29,5 +37,15 @@
 @media screen and (min-width: 768px) {
   .navbar-brand {
     font-size: 1.250rem;
+  }
+  .navbar {
+    min-height: 100px;
+  }
+  .crest {
+    display: block;
+    height: 60px;
+  }
+  .mobcrest {
+    display: none;
   }
 }

@@ -58,9 +58,6 @@ a {
     color: $bga-blue;
   }
 }
-.crest {
-  display: none;
-}
 #accountWrapper {
   display: none;
 }
@@ -92,12 +89,6 @@ a {
 
 // Responsive (medium and up)
 @media screen and (min-width: 768px) {
-  .crest {
-    border-right: 1px solid rgba(255, 255, 255, 0.5);
-    padding-right: 1.125rem;
-    margin-right: 1rem;
-    display: inline-flex;
-  }
   #accountWrapper {
     display: block;
     a {
