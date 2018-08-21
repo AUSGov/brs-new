@@ -104,6 +104,10 @@ const config = {
         removeComments: true,
       },
     }),
+    new HtmlWebPackPlugin({
+      filename: 'tax-registrations.html',
+      template: 'src/tax-registrations.html',
+    }),
     new ExtractTextPlugin('styles.css'),
   ],
 };
