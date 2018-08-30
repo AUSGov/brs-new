@@ -1,17 +1,33 @@
 // Global Header
 
-.globalHeader {
+/*.globalHeader {
     background-color: $bga-blue;
     min-height: 66px;
     border-bottom: 3px solid $site-yellow-tint1;
     padding: 13px 0 10px 0;
+}*/
+.globalHeaderSub {
+    min-height: 98px;
+    .bgaReturn {
+        min-height: 32px;
+        background-color: $navy;
+        padding-top: 2px;
+    }
+}
+.serviceHeader {
+    background-color: $bga-blue;
+    min-height: 76px;
+    padding-top: 16px;
+}
+.mainMenu {
+    background-color: $dark-navy;
+    min-height: 32px;
 }
 .crest {
   display: none;
 }
 .mobcrest {
-  display: block;
-  width: 140px;
+  height: 44px;
   overflow: visible;
 }
 #accountWrapper {

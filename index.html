@@ -7,7 +7,8 @@
   <meta name="description" content="Business Registration Service">
   <meta name="author" content="E.J. Sephora">
 
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+    crossorigin="anonymous">
 
   <title>Business Registration Service</title>
 </head>
@@ -15,7 +16,6 @@
 <body>
   <!-- off-canvas nav -->
   <aside>
-    <p>This is the main menu</p>
     <nav>
       <ul>
         <li>
@@ -73,9 +73,7 @@
     </nav>
     <!-- <p>Footer ipsum dolor netus &copy; 2015</p> -->
   </aside>
-  <a id="nav-toggle" href="#!" class="position">
-    <span></span>
-  </a>
+
   <!-- End off-canvas nav -->
 
   <!-- Alert Ribbon
@@ -93,18 +91,22 @@
 
   <!-- Begin page content -->
   <main role="main">
-    <header class="globalHeader">
-      <nav class="navbar navbar-dark">
-        <div class="container">
-          <a href="index.html" class="navbar-brand mx-auto d-block text-center-md order-0 order-md-0">
-            <img class="mobcrest" src="./public/img/MOB_BRS_LOGO_WHITE.svg" alt="Australian Government Crest">
-            <img class="crest" src="./public/img/BRS_LOGO_WHITE.svg" alt="Australian Government Crest"></a>
+    <header class="globalHeaderSub">
+      <div class="bgaReturn container-fluid">
+        <a href="https://www.business.gov.au/"><img src="/src/img/bga-mobile-logo.png"></a>
+      </div>
+      <div class="serviceHeader container">
+        <a href="index.html"><img class="mobcrest" src="/src/img/brs-logo-mobile.svg"></a>
+      </div>
+      <div class="mainMenu container">
+        <div class="row">
+          <a id="nav-toggle" href="#!" class=" ">
+            <span></span><div class="menuLabel">Menu</div>
+          </a>
         </div>
-      </nav>
-      <div id="accountWrapper" class="mt-2 mr-3 text-right">
-        <a class="account" href="#">Sign in</a>
       </div>
     </header>
+
 
     <div class="content container">
       <div id="headingHome" class="pageheader">
