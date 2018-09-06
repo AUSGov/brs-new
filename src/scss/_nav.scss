@@ -1,31 +1,25 @@
 // Nav and Navbar
-.navbar {
-  padding: 0;
-}
-.navbar-brand {
-  font-size: 0.875rem;
-  padding: 0;
-}
-.navbar-dark {
-  .navbar-toggler {
-    border: 0;
-    padding: 0.25rem;
-    color: white;
-    .navbar-toggler-icon {
-      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-    }
-    .menu {
-      display: block;
-      font-size: .875rem;
-    }
-    &:hover {
-      background-color: $bga-blue-tint1;
+#mobileNav {
+  .navbar {
+    padding: 10px 15px;
+  }
+  .navbar-dark {
+    background .navbar-toggler {
+      border: 0;
+      color: white;
+      .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+      }
+      &:hover {
+        background-color: $bga-blue-tint1;
+      }
     }
   }
 }
+
 // Responsive (medium and up)
-@media screen and (min-width: 768px) {
-  .navbar-brand {
-    font-size: 1.250rem;
+@include media-breakpoint-up(md) {
+  #mobileNav {
+    display: none;
   }
 }

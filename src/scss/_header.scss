@@ -18,9 +18,9 @@
     background-color: $bga-blue;
     min-height: 76px;
     padding-top: 16px;
+    border-bottom: 3px solid $bga-yellow;
 }
 .mainMenu {
-    background-color: $dark-navy;
     min-height: 32px;
 }
 .crest {
@@ -36,22 +36,19 @@
 
 
 // Responsive (medium and up)
-@media screen and (min-width: 768px) {
-    .globalHeader {
+@include media-breakpoint-up(sm) {
+    .serviceHeader {
         min-height: 100px;
-        border-bottom: 4px solid $site-yellow-tint1;
-    }
-    .crest {
-        display: block;
-        height: 60px;
-    }
-    .mobcrest {
-        display: none;
+        padding-top: 26px;
+        border-bottom: 4px solid $bga-yellow;
     }
     #accountWrapper {
         display: block;
         a {
         padding: 0 0.5rem;
         }
+    }
+    .bgaReturn {
+        text-align: center;
     }
 }

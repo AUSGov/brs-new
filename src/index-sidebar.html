@@ -7,8 +7,11 @@
   <meta name="description" content="Business Registration Service">
   <meta name="author" content="E.J. Sephora">
 
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-    crossorigin="anonymous">
+      <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
 
   <title>Business Registration Service - With Sidebar</title>
 </head>
@@ -23,13 +26,14 @@
       </div>
 
       <div class="sidebar-header">
-        <h4>Main Menu</h4>
+        <h3>Main Menu</h3>
       </div>
 
       <ul class="list-unstyled components">
+        <p>Dummy Heading</p>
         <li class="active">
           <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Home</a>
-          <!--<ul class="collapse list-unstyled" id="homeSubmenu">
+          <ul class="collapse list-unstyled" id="homeSubmenu">
             <li>
               <a href="#">Home 1</a>
             </li>
@@ -39,7 +43,7 @@
             <li>
               <a href="tax-registrations.html">Tax Registration</a>
             </li>
-          </ul>-->
+          </ul>
         </li>
         <li>
           <a href="#">About</a>
@@ -57,10 +61,19 @@
           </ul>
         </li>
         <li>
-          <a href="tax-registrations.html">Tax Registration</a>
+          <a href="#">Portfolio</a>
         </li>
         <li>
           <a href="#">Contact</a>
+        </li>
+      </ul>
+
+      <ul class="list-unstyled CTAs">
+        <li>
+          <a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download">Download source</a>
+        </li>
+        <li>
+          <a href="https://bootstrapious.com/p/bootstrap-sidebar" class="article">Back to article</a>
         </li>
       </ul>
     </nav>
@@ -70,51 +83,51 @@
 
       <main role="main">
         <header class="globalHeaderSub">
-
-          <!-- BGA Global Ribbon -->
           <div class="bgaReturn container-fluid">
             <a href="https://www.business.gov.au/"><img src="/src/img/bga-mobile-logo.png"></a>
           </div>
-
-          <!-- Service Ribbon -->
           <div class="serviceHeader">
-            <div class="text-sm-center container-fluid">
-              <button type="button" id="sidebarCollapse" class="btn btn-menu">
-                <i class="fas fa-align-left"></i>
-                <span>Menu</span>
-              </button>
+            <div class="container">
               <a href="index.html"><img class="mobcrest" src="/src/img/brs-logo-mobile.svg"></a>
             </div>
           </div>
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
 
-          <div id="mobileNav" class="fixed-bottom">
-            <div class="collapse" id="navbarToggleExternalContent">
-              <div class="bg-dark p-4">
-                <h5 class="text-white h4">Collapsed content</h5>
-                <span class="text-muted">Toggleable via the navbar brand.</span>
+              <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                        <span>Toggle Sidebar</span>
+                    </button>
+              <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="nav navbar-nav ml-auto">
                   <li class="nav-item active">
                     <a class="nav-link" href="#">About</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Frequently asked questions</a>
+                    <a class="nav-link" href="#">Sign in</a>
                   </li>
                   <li class="nav-item">
-                    <a id="alert" class="nav-link" href="#">Is JQuery working?</a>
+                    <a class="nav-link" href="#">A link</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Do I need an ABN?</a>
+                    <a class="nav-link" href="#">Another link</a>
                   </li>
                 </ul>
               </div>
             </div>
-            <nav class="navbar navbar-dark bg-dark">
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
-                aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-              </button>
-            </nav>
-          </div>
+          </nav>
+          <!--<div class="mainMenu container">
+        <div class="row">
+          <a id="nav-toggle" href="#!" class=" ">
+            <span></span><div class="menuLabel">Menu</div>
+          </a>
+        </div>
+      </div>-->
         </header>
 
 
@@ -223,7 +236,7 @@
             </div>
           </div>
 
-          <h2 class="mb-5 homeH2">Help for your business</h2>
+          <h2 class="mb-5 homeH2">Other resources/info</h2>
           <div id="otherInfo" class="infoTiles">
 
             <div class="row mb-2">
@@ -298,7 +311,37 @@
 
   <div class="overlay"></div>
 
+  <!-- jQuery CDN - Slim version (=without AJAX) -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <!-- Popper.JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+    crossorigin="anonymous"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+    crossorigin="anonymous"></script>
+  <!-- jQuery Custom Scroller CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
 
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#sidebar").mCustomScrollbar({
+                theme: "minimal"
+            });
+
+            $('#dismiss, .overlay').on('click', function () {
+                $('#sidebar').removeClass('active');
+                $('.overlay').removeClass('active');
+            });
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').addClass('active');
+                $('.overlay').addClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+        });
+    </script>
 
 </body>
 

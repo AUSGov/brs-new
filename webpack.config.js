@@ -5,6 +5,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+//const PerfectScrollbar = require('perfect-scrollbar');
 
 const IS_DEV = process.env.NODE_ENV === 'dev';
 
@@ -80,6 +81,11 @@ const config = {
           },
         ],
       },
+      // font-awesome
+      /*      {
+        test: /font-awesome\.config\.js/,
+        use: [{ loader: 'style-loader' }, { loader: 'font-awesome-loader' }],
+      },*/
     ],
   },
   plugins: [
@@ -108,6 +114,11 @@ const config = {
       filename: 'tax-registrations.html',
       template: 'src/tax-registrations.html',
     }),
+    new HtmlWebPackPlugin({
+      filename: 'index-sidebar.html',
+      template: 'src/index-sidebar.html',
+    }),
+    //new PerfectScrollbar('#container'),
     new ExtractTextPlugin('styles.css'),
   ],
 };

@@ -16,9 +16,6 @@ a {
     color: $link-visited;
   } */
 }
-.homeH2 {
-  font-size: 2.250rem;
-}
 .ribbon {
   font-size: 0.875rem;
   padding: 0.5rem;
@@ -85,7 +82,7 @@ a {
 }
 
 // Responsive (medium and up)
-@media screen and (min-width: 768px) {
+@include media-breakpoint-up(sm) {
   .pageheader {
     margin-top: 5rem;
     margin-bottom: 5rem;
