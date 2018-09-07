@@ -45,6 +45,15 @@
       -moz-box-shadow: 0px 0px 6px 4px rgba(0, 0, 0, 0.15);
       box-shadow: 0px 0px 6px 4px rgba(0, 0, 0, 0.15);
     }
+    .lowdown {
+      display: block;
+      position: absolute;
+      bottom: 1.250rem;
+      p {
+        margin: 0;
+        padding-right: 1.250rem;
+      }
+    }
     .card-cta {
       display: inline-block;
       .cta-arrow {
@@ -78,7 +87,7 @@
     margin-bottom: 4rem;
     .primarycard,
     .secondarycard {
-      min-height: 200px;
+      min-height: 275px;
       border: 0;
       border-bottom-left-radius: 6px;
       border-bottom-right-radius: 6px;
@@ -115,6 +124,18 @@
     }
     .secondarycard {
       border-top: 4px solid $bga-yellow-tint1;
+    }
+  }
+}
+// Responsive (large and up)
+@include media-breakpoint-up(lg) {
+  .actionTiles {
+    padding-bottom: 3rem;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 4rem;
+    .primarycard,
+    .secondarycard {
+      min-height: 200px;
     }
   }
 }
