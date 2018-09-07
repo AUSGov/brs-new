@@ -1,18 +1,40 @@
 // Nav and Navbar
 #mobileNav {
-  .navbar {
-    padding: 10px 15px;
+  .bga-navbar {
+    padding: 6px 15px;
+    background-color: $navy;
+    button.navbar-toggler[aria-expanded="true"] {
+      background-color: $bga-blue;
+    }
   }
-  .navbar-dark {
-    background .navbar-toggler {
-      border: 0;
-      color: white;
-      .navbar-toggler-icon {
-        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-      }
-      &:hover {
-        background-color: $bga-blue-tint1;
-      }
+  a.nav-link {
+    color: white;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  .bga-nav {
+    background-color: $bga-blue;
+  }
+  .navbar-toggler {
+    color: white;
+    text-align: center;
+    display: inline-block;
+    padding: 4px;
+    .icon {
+      vertical-align: middle;
+      font-size: 1rem;
+      padding-bottom: 6px;
+    }
+    .label {
+      display: block;
+      font-size: 12px;
+    }
+    &:focus {
+      border: 1px solid $bga-blue-tint1;
+    }
+    &:hover, &:active {
+      background-color: $bga-blue;
     }
   }
 }

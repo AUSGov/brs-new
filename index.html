@@ -87,11 +87,10 @@
             </div>
           </div>
 
+          <!-- Mobile Navigation - fixed to bottom -->
           <div id="mobileNav" class="fixed-bottom">
             <div class="collapse" id="navbarToggleExternalContent">
-              <div class="bg-dark p-4">
-                <h5 class="text-white h4">Collapsed content</h5>
-                <span class="text-muted">Toggleable via the navbar brand.</span>
+              <div class="bga-nav p-4">
                 <ul class="nav navbar-nav ml-auto">
                   <li class="nav-item active">
                     <a class="nav-link" href="#">About</a>
@@ -108,13 +107,36 @@
                 </ul>
               </div>
             </div>
-            <nav class="navbar navbar-dark bg-dark">
+            <nav class="navbar bga-navbar">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleMenuOne" aria-controls="navbarToggleMenuOne"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="icon"><i class="fas fa-comments"></i></span>
+                <span class="label">Chat</span>
+              </button>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleMenuTwo" aria-controls="navbarToggleMenuTwo"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="icon"><i class="fas fa-question-circle"></i></span>
+                <span class="label">Help</span>
+              </button>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleMenuThree" aria-controls="navbarToggleMenuThree"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="icon"><i class="fas fa-toolbox"></i></span>
+                <span class="label">Services</span>
+              </button>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleMenuFour" aria-controls="navbarToggleMenuFour"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="icon"><i class="fas fa-user"></i></span>
+                <span class="label">Sign in</span>
+              </button>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
                 aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+                <span class="icon"><i class="fas fa-align-left"></i></span>
+                <span class="label">More</span>
               </button>
             </nav>
           </div>
+          <!-- End Mobile Navigation -->
+
         </header>
 
 
