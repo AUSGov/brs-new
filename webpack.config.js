@@ -1,13 +1,13 @@
-const path = require('path');
-const webpack = require('webpack');
-const HtmlWebPackPlugin = require('html-webpack-plugin');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const path = require('path')
+const webpack = require('webpack')
+const HtmlWebPackPlugin = require('html-webpack-plugin')
+const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const CleanWebpackPlugin = require('clean-webpack-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 //const PerfectScrollbar = require('perfect-scrollbar');
 
-const IS_DEV = process.env.NODE_ENV === 'dev';
+const IS_DEV = process.env.NODE_ENV === 'dev'
 
 const config = {
   mode: IS_DEV ? 'development' : 'production',
@@ -121,14 +121,14 @@ const config = {
     //new PerfectScrollbar('#container'),
     new ExtractTextPlugin('styles.css'),
   ],
-};
+}
 
 if (!IS_DEV) {
   config.plugins.push(
     new UglifyJsPlugin({
       sourceMap: false,
     })
-  );
+  )
 }
 
-module.exports = config;
+module.exports = config
