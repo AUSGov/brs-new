@@ -1,5 +1,4 @@
 // Cards
-
 .infoTiles {
   .card {
     box-shadow: 0 -4px 0 0 $bga-blue;
@@ -37,11 +36,11 @@
     border-bottom-right-radius: 6px;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
-    -webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
-    -moz-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
-    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.25);
     transition: box-shadow .2s ease-in-out;
-    &:hover {
+    &:active {
       -webkit-box-shadow: 0px 0px 6px 4px rgba(0, 0, 0, 0.15);
       -moz-box-shadow: 0px 0px 6px 4px rgba(0, 0, 0, 0.15);
       box-shadow: 0px 0px 6px 4px rgba(0, 0, 0, 0.15);
@@ -68,5 +67,54 @@
   }
   .secondarycard {
     border-top: 4px solid $bga-yellow-tint1;
+  }
+}
+
+// Responsive (medium and up)
+@include media-breakpoint-up(md) {
+  .actionTiles {
+    padding-bottom: 3rem;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 4rem;
+    .primarycard,
+    .secondarycard {
+      min-height: 200px;
+      border: 0;
+      border-bottom-left-radius: 6px;
+      border-bottom-right-radius: 6px;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      -webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+      -moz-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+      box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+      transition: box-shadow .2s ease-in-out;
+      &:hover {
+        -webkit-box-shadow: 0px 0px 6px 4px rgba(0, 0, 0, 0.15);
+        -moz-box-shadow: 0px 0px 6px 4px rgba(0, 0, 0, 0.15);
+        box-shadow: 0px 0px 6px 4px rgba(0, 0, 0, 0.15);
+      }
+      .card-cta {
+        display: inline-block;
+        .cta-arrow {
+          fill: $link;
+          position: relative;
+          left: .25rem;
+          transition: left .3s ease-in-out
+        }
+        &:hover {
+          text-decoration: none;
+          .cta-arrow {
+            fill: $link-hover;
+            left: 0.625rem;
+          }
+        }
+      }
+    }
+    .primarycard {
+      border-top: 4px solid $bga-blue-tint1;
+    }
+    .secondarycard {
+      border-top: 4px solid $bga-yellow-tint1;
+    }
   }
 }

@@ -9,9 +9,14 @@
 .globalHeaderSub {
     min-height: 98px;
     .bgaReturn {
-        min-height: 32px;
+        height: 32px;
         background-color: $navy;
-        padding-top: 2px;
+        padding-top: 10px;
+        .bgaLogo {
+            height: 14px;
+            padding: 0;
+            vertical-align: top;
+        }
     }
 }
 .serviceHeader {
