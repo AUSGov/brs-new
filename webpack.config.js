@@ -51,9 +51,8 @@ const config = {
         test: /\.(gif|png|jpe?g|svg)$/i,
         use: [
           {
-            loader: 'url-loader',
+            loader: 'file-loader',
             options: {
-              limit: 8192,
               name: 'public/[name].[ext]?[hash:7]',
             },
           },
@@ -111,12 +110,20 @@ const config = {
       },
     }),
     new HtmlWebPackPlugin({
-      filename: 'tax-registrations.html',
-      template: 'src/tax-registrations.html',
+      filename: 'brs-tax-registrations.html',
+      template: 'src/brs-tax-registrations.html',
     }),
     new HtmlWebPackPlugin({
       filename: 'index-sidebar.html',
       template: 'src/index-sidebar.html',
+    }),
+    new HtmlWebPackPlugin({
+      filename: 'vanguard.html',
+      template: 'src/vanguard.html',
+    }),
+    new HtmlWebPackPlugin({
+      filename: 'brs-home.html',
+      template: 'src/brs-home.html',
     }),
     //new PerfectScrollbar('#container'),
     new ExtractTextPlugin('styles.css'),
